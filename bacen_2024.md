@@ -30,7 +30,7 @@
 
 </details>
 
-```javascript
+<!--script>
 // Script para o funcionamento do accordion
 document.addEventListener("DOMContentLoaded", function() {
   const details = document.querySelectorAll("details");
@@ -41,5 +41,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
-```
+</script-->
 
