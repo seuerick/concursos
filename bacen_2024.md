@@ -1,9 +1,12 @@
-# Título do Documento
+# Edital Bacen 2024
 
-## Conteúdo do Accordion
+## Conteúdo e Questões
 
 <details>
-  <summary>FUNDAMENTOS DE MACROECONOMIA E MICROECONOMIA (30): I MACROECONOMIA:</summary>
+    <summary>FUNDAMENTOS DE MACROECONOMIA E MICROECONOMIA (10 questões)
+
+<details>
+  <summary>I MACROECONOMIA</summary>
   <br>
 
   1. Contas nacionais
@@ -15,7 +18,7 @@
 </details>
 
 <details>
-  <summary>II MICROECONOMIA:</summary>
+  <summary>II MICROECONOMIA</summary>
   <br>
 
   1. Estrutura de mercado:
@@ -27,6 +30,7 @@
       - Efeitos preço, renda e substituição
       - Curva de demanda
       - Elasticidade da demanda
+</details>
 
 </details>
 
