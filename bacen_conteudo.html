@@ -1,203 +1,221 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordion</title>
-    <style>
-      /* Estilo para o accordion */
-      .accordion {
-        max-width: 600px;
-        margin: 20px auto;
-      }
 
-      .accordion-item {
-        background-color: #f4f4f4;
-        margin-bottom: 10px;
-        border-radius: 5px;
-      }
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Accordion</title>
+	<style>
+		/* Estilo para o accordion */
+		.accordion {
+			max-width: 600px;
+			margin: 20px auto;
+		}
 
-      .accordion-header {
-        padding: 10px;
-        font-weight: bold;
-        cursor: pointer;
-      }
+		.accordion-item {
+			background-color: #f4f4f4;
+			margin-bottom: 10px;
+			border-radius: 5px;
+		}
 
-      .accordion-body {
-        display: none;
-        padding: 10px;
-      }
+		.accordion-header {
+			padding: 10px;
+			font-weight: bold;
+			cursor: pointer;
+		}
 
-      .accordion-item.active .accordion-body {
-        display: block;
-      }
+		.accordion-body {
+			display: none;
+			padding: 10px;
+		}
 
-      .sub-accordion-item {
-        margin-left: 20px;
-      }
+		.accordion-item.active .accordion-body {
+			display: block;
+		}
 
-      .sub-accordion-body {
-        display: none;
-      }
+		.sub-accordion-item {
+			margin-left: 20px;
+		}
 
-      .sub-accordion-item.active .sub-accordion-body {
-        display: block;
-      }
+		.sub-accordion-body {
+			display: none;
+		}
 
-      .btn-container {
-        margin-bottom: 10px;
-      }
+		.sub-accordion-item.active .sub-accordion-body {
+			display: block;
+		}
 
-      .btn {
-        cursor: pointer;
-        padding: 5px 10px;
-        margin-right: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="btn-container">
-      <button class="btn" id="expand-all">Expandir Todos</button>
-      <button class="btn" id="collapse-all">Recolher Todos</button>
-    </div>
+		.btn-container {
+			margin-bottom: 10px;
+		}
 
-    <div class="accordion">
-      <div class="accordion-item">
-        <div class="accordion-header">
-          FUNDAMENTOS DE MACROECONOMIA E MICROECONOMIA (30):
-        </div>
-        <div class="accordion-body">
-          <div class="sub-accordion-item">
-            <div class="accordion-header">I MACROECONOMIA</div>
-            <div class="sub-accordion-body">
-              <div class="sub-accordion-item">
-                <div class="accordion-header">1 Contas nacionais</div>
-                <div class="sub-accordion-body">
-                  <p>Conteúdo de Contas nacionais</p>
-                </div>
-              </div>
-              <div class="sub-accordion-item">
-                <div class="accordion-header">2 Agregados monetários</div>
-                <div class="sub-accordion-body">
-                  <p>Conteúdo de Agregados monetários</p>
-                </div>
-              </div>
-              <div class="sub-accordion-item">
-                <div class="accordion-header">
-                  3 Multiplicador monetário, criação e destruição de moeda
-                </div>
-                <div class="sub-accordion-body">
-                  <p>
-                    Conteúdo de Multiplicador monetário, criação e destruição de
-                    moeda
-                  </p>
-                </div>
-              </div>
-              <div class="sub-accordion-item">
-                <div class="accordion-header">
-                  4 Contas do sistema monetário
-                </div>
-                <div class="sub-accordion-body">
-                  <p>Conteúdo de Contas do sistema monetário</p>
-                </div>
-              </div>
-              <div class="sub-accordion-item">
-                <div class="accordion-header">5 Balanço de pagamentos</div>
-                <div class="sub-accordion-body">
-                  <p>Conteúdo de Balanço de pagamentos</p>
-                </div>
-              </div>
-            </div>
-          </div>
+		.btn {
+			cursor: pointer;
+			padding: 5px 10px;
+			margin-right: 10px;
+		}
+	</style>
+</head>
 
-          <div class="sub-accordion-item">
-            <div class="accordion-header">II MICROECONOMIA</div>
-            <div class="sub-accordion-body">
-              <div class="sub-accordion-item">
-                <div class="accordion-header">1 Estrutura de mercado</div>
-                <div class="sub-accordion-item">
-                  <div class="accordion-header">
-                    1.1 Formas de organização da atividade econômica, o papel
-                    dos preços, custo de oportunidade e fronteiras das
-                    possibilidades de produção.
-                    <div class="sub-accordion-body">Conteúdo</div>
-                  </div>
-                </div>
-              </div>
-              <div class="sub-accordion-item">
-                <div class="accordion-header">2 Oferta e demanda</div>
-                <div class="sub-accordion-body">
-                  <ul>
-                    <li>2.1 Curvas de indiferença.</li>
-                    <li>2.2 Restrição orçamentária.</li>
-                    <li>2.3 Equilíbrio do consumidor.</li>
-                    <li>2.4 Efeitos preço, renda e substituição.</li>
-                    <li>2.5 Curva de demanda.</li>
-                    <li>2.6 Elasticidade da demanda.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<body>
+	<div class="btn-container">
+		<button class="btn" id="expand-all">Expandir Todos</button>
+		<button class="btn" id="collapse-all">Recolher Todos</button>
+	</div>
 
-    <script>
-      // Script para o funcionamento do accordion
-      document.addEventListener("DOMContentLoaded", function () {
-        const accordionHeaders = document.querySelectorAll(".accordion-header");
+	<div class="accordion">
+		<div class="accordion-item">
+			<div class="accordion-header">
+				LÍNGUA PORTUGUESA (25 questões)
+			</div>
+		</div>
+		<div class="accordion-item">
+					<div class="accordion-header">
+						NOÇÕES DE LÓGICA E ESTATÍSTICA (10)
+					</div>
+				</div>
+				<div class="accordion-item">
+									<div class="accordion-header">
+										DIREITO ADMINISTRATIVO (5)
+									</div>
+								</div>
+		<div class="accordion-item">
+			<div class="accordion-header">
+				FUNDAMENTOS DE MACROECONOMIA E MICROECONOMIA (10 questões)
+			</div>
+			<div class="accordion-body">
+				<div class="sub-accordion-item">
+					<div class="accordion-header">I MACROECONOMIA</div>
+					<div class="sub-accordion-body">
+						<div class="sub-accordion-item">
+							<div class="accordion-header">1 Contas nacionais</div>
+							<div class="sub-accordion-body">
+								<p>Conteúdo de Contas nacionais</p>
+							</div>
+						</div>
+						<div class="sub-accordion-item">
+							<div class="accordion-header">2 Agregados monetários</div>
+							<div class="sub-accordion-body">
+								<p>Conteúdo de Agregados monetários</p>
+							</div>
+						</div>
+						<div class="sub-accordion-item">
+							<div class="accordion-header">
+								3 Multiplicador monetário, criação e destruição de moeda
+							</div>
+							<div class="sub-accordion-body">
+								<p>
+									Conteúdo de Multiplicador monetário, criação e destruição de
+									moeda
+								</p>
+							</div>
+						</div>
+						<div class="sub-accordion-item">
+							<div class="accordion-header">
+								4 Contas do sistema monetário
+							</div>
+							<div class="sub-accordion-body">
+								<p>Conteúdo de Contas do sistema monetário</p>
+							</div>
+						</div>
+						<div class="sub-accordion-item">
+							<div class="accordion-header">5 Balanço de pagamentos</div>
+							<div class="sub-accordion-body">
+								<p>Conteúdo de Balanço de pagamentos</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-        accordionHeaders.forEach((header) => {
-          header.addEventListener("click", function () {
-            const accordionItem = this.parentElement;
-            accordionItem.classList.toggle("active");
-          });
-        });
+				<div class="sub-accordion-item">
+					<div class="accordion-header">II MICROECONOMIA</div>
+					<div class="sub-accordion-body">
+						<div class="sub-accordion-item">
+							<div class="accordion-header">1 Estrutura de mercado</div>
+							<div class="sub-accordion-item">
+								<div class="accordion-header">
+									1.1 Formas de organização da atividade econômica, o papel
+									dos preços, custo de oportunidade e fronteiras das
+									possibilidades de produção.
+									<div class="sub-accordion-body">Conteúdo</div>
+								</div>
+							</div>
+						</div>
+						<div class="sub-accordion-item">
+							<div class="accordion-header">2 Oferta e demanda</div>
+							<div class="sub-accordion-body">
+								<ul>
+									<li>2.1 Curvas de indiferença.</li>
+									<li>2.2 Restrição orçamentária.</li>
+									<li>2.3 Equilíbrio do consumidor.</li>
+									<li>2.4 Efeitos preço, renda e substituição.</li>
+									<li>2.5 Curva de demanda.</li>
+									<li>2.6 Elasticidade da demanda.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        const subAccordionHeaders = document.querySelectorAll(
-          ".sub-accordion-header"
-        );
+	<script>
+		// Script para o funcionamento do accordion
+		document.addEventListener("DOMContentLoaded", function () {
+			const accordionHeaders = document.querySelectorAll(".accordion-header");
 
-        subAccordionHeaders.forEach((header) => {
-          header.addEventListener("click", function () {
-            const subAccordionItem = this.parentElement;
-            subAccordionItem.classList.toggle("active");
-          });
-        });
+			accordionHeaders.forEach((header) => {
+				header.addEventListener("click", function () {
+					const accordionItem = this.parentElement;
+					accordionItem.classList.toggle("active");
+				});
+			});
 
-        // Botão para expandir todos os itens
-        document
-          .getElementById("expand-all")
-          .addEventListener("click", function () {
-            const accordionItems = document.querySelectorAll(".accordion-item");
-            accordionItems.forEach((item) => {
-              item.classList.add("active");
-            });
-            const subAccordionItems = document.querySelectorAll(
-              ".sub-accordion-item"
-            );
-            subAccordionItems.forEach((item) => {
-              item.classList.add("active");
-            });
-          });
+			const subAccordionHeaders = document.querySelectorAll(
+				".sub-accordion-header"
+			);
 
-        // Botão para recolher todos os itens
-        document
-          .getElementById("collapse-all")
-          .addEventListener("click", function () {
-            const accordionItems = document.querySelectorAll(".accordion-item");
-            accordionItems.forEach((item) => {
-              item.classList.remove("active");
-            });
-            const subAccordionItems = document.querySelectorAll(
-              ".sub-accordion-item"
-            );
-            subAccordionItems.forEach((item) => {
-              item.classList.remove("active");
-            });
-          });
-      });
-    </script>
-  </body>
+			subAccordionHeaders.forEach((header) => {
+				header.addEventListener("click", function () {
+					const subAccordionItem = this.parentElement;
+					subAccordionItem.classList.toggle("active");
+				});
+			});
+
+			// Botão para expandir todos os itens
+			document
+				.getElementById("expand-all")
+				.addEventListener("click", function () {
+					const accordionItems = document.querySelectorAll(".accordion-item");
+					accordionItems.forEach((item) => {
+						item.classList.add("active");
+					});
+					const subAccordionItems = document.querySelectorAll(
+						".sub-accordion-item"
+					);
+					subAccordionItems.forEach((item) => {
+						item.classList.add("active");
+					});
+				});
+
+			// Botão para recolher todos os itens
+			document
+				.getElementById("collapse-all")
+				.addEventListener("click", function () {
+					const accordionItems = document.querySelectorAll(".accordion-item");
+					accordionItems.forEach((item) => {
+						item.classList.remove("active");
+					});
+					const subAccordionItems = document.querySelectorAll(
+						".sub-accordion-item"
+					);
+					subAccordionItems.forEach((item) => {
+						item.classList.remove("active");
+					});
+				});
+		});
+	</script>
+</body>
+
 </html>
