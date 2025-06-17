@@ -22,7 +22,13 @@
     <summary>I MACROECONOMIA</summary>
     <br>
 
-  1. Contas nacionais
+  <details><sumary>1. Contas nacionais</sumary><br>
+
+O PIB nominal de um país sempre excede seu PIB real devido à inflação. (Verdadeiro/Falso)
+Justificativa: Falso. O PIB nominal é o valor total de bens e serviços produzidos a preços correntes, enquanto o PIB real é ajustado pela inflação para refletir os preços constantes, portanto, o PIB real pode exceder ou ser igual ao PIB nominal, dependendo da inflação.
+
+</details>
+    
   2. Agregados monetários
   3. Multiplicador monetário, criação e destruição de moeda
   4. Contas do sistema monetário
