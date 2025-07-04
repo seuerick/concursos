@@ -1,0 +1,164 @@
+Questões de Controle Externo (Técnico – Cespe 2015)
+
+1. Funções e Natureza jurídica
+
+Questão (nº 76 na correção comentada)
+
+> “O TCU é órgão vinculado e subordinado ao Poder Legislativo.”
+
+
+
+Gabarito Cespe: Errado.
+
+Comentário: há vinculação para fins orçamentários, mas sem subordinação hierárquica  .
+
+
+2. Autonomia para gestão de pessoal
+
+Questão (nº 77)
+
+> “Para viabilizar a ação fiscalizadora e evitar ingerências, o TCU tem autonomia para criar, transformar e extinguir cargos e funções do seu quadro.”
+
+
+
+Gabarito Cespe: Errado.
+
+Comentário: o TCU apenas propõe mudanças ao Congresso, e não decide autonomamente  .
+
+
+3. Jurisdição e sucessores
+
+Questão (nº 78)
+
+> “A jurisdição do TCU envolve todo o território nacional e atinge sucessores, de forma ilimitada.”
+
+
+
+Gabarito Cespe: Errado.
+
+Comentário: a jurisdição atinge sucessores até o limite do valor do patrimônio transferido, conforme art. 5º, VIII da Lei Orgânica do TCU  .
+
+
+4. Substituição do Presidente do TCU
+
+Questão (nº 79)
+
+> “Na ausência do presidente, o cargo pode ser exercido pelo ministro mais antigo em exercício.”
+
+Questões de Controle Externo – Técnico TCU – CESPE 2015
+
+Questão 76
+
+> O TCU é órgão vinculado e subordinado ao Poder Legislativo.
+Gabarito: ❌ Errado
+Comentário: O TCU possui vinculação administrativa e orçamentária ao Congresso Nacional, mas não há subordinação hierárquica. Trata-se de um órgão autônomo, como previsto na CF/88 (arts. 70 a 75).
+
+
+
+
+---
+
+Questão 77
+
+> Para viabilizar a ação fiscalizadora e evitar ingerências, o TCU tem autonomia para criar, transformar e extinguir cargos e funções do seu quadro.
+Gabarito: ❌ Errado
+Comentário: O TCU não tem competência para alterar seu quadro de pessoal de forma autônoma. Ele pode propor ao Congresso essas alterações (art. 73, § 2º, inciso II da CF).
+
+
+
+
+---
+
+Questão 78
+
+> A jurisdição do TCU envolve todo o território nacional e atinge sucessores, de forma ilimitada.
+Gabarito: ❌ Errado
+Comentário: A jurisdição do TCU atinge sucessores apenas até o limite do patrimônio transferido, conforme Lei Orgânica do TCU e jurisprudência do STF.
+
+
+
+
+---
+
+Questão 79
+
+> Na ausência do presidente, o cargo pode ser exercido pelo ministro mais antigo em exercício.
+Gabarito: ✅ Certo
+Comentário: Conforme o Regimento Interno do TCU, na ausência do presidente e do vice, assume o ministro mais antigo presente.
+
+
+
+
+---
+
+Questão 80
+
+> O TCU atua por iniciativa própria ou mediante provocação do Congresso Nacional.
+Gabarito: ✅ Certo
+Comentário: A atuação do TCU pode se dar de ofício ou por provocação externa (CF, art. 71, inciso IV). Também pode ser acionado por denúncia de cidadão, partido político ou comissão.
+
+
+
+
+---
+
+Questão 81
+
+> A atuação do TCU restringe-se à análise da legalidade e legitimidade de atos administrativos.
+Gabarito: ❌ Errado
+Comentário: O TCU também verifica a economicidade, eficiência, eficácia e efetividade, ou seja, realiza o controle da gestão e resultados, não apenas a legalidade.
+
+
+
+
+---
+
+Questão 82
+
+> O TCU pode aplicar sanções a agentes públicos que praticarem irregularidades, inclusive determinando a demissão.
+Gabarito: ❌ Errado
+Comentário: O TCU pode aplicar multas e outras sanções administrativas, mas não pode demitir servidores, pois essa é uma atribuição do Poder Executivo.
+
+
+
+
+---
+
+Questão 83
+
+> O TCU pode julgar as contas de qualquer pessoa física ou jurídica que utilize recursos públicos.
+Gabarito: ✅ Certo
+Comentário: CF/88, art. 71, inciso II. A jurisdição do TCU alcança qualquer pessoa que administre ou utilize bens ou valores públicos, incluindo ONGs e entes privados subvencionados.
+
+
+
+
+---
+
+Questão 84
+
+> O TCU não pode determinar a sustação de contratos administrativos.
+Gabarito: ❌ Errado
+Comentário: O TCU pode determinar a sustação do ato impugnado, e, se o Congresso não decidir em 90 dias, ele próprio pode sustar contratos (CF/88, art. 71, §1º).
+
+
+
+
+---
+
+Questão 85
+
+> Compete ao TCU acompanhar a execução orçamentária e verificar o cumprimento da LRF.
+Gabarito: ✅ Certo
+Comentário: A Constituição Federal e a LRF atribuem ao TCU a competência para acompanhar a execução orçamentária e fiscal, incluindo metas, limites e renúncias fiscais.
+
+
+
+
+---
+
+Questão 86
+
+> A fiscalização do TCU se limita a órgãos da administração direta do Poder Executivo.
+Gabarito: ❌ Errado
+Comentário: A atuação do TCU abrange toda a Administração Pública Federal, incluindo os Poderes Legislativo, Judiciário, Ministério Público, autarquias, fundações, empresas públicas e sociedades de economia mista.
