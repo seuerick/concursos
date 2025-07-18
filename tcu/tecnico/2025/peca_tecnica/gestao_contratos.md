@@ -1,6 +1,6 @@
 Exemplo de peça técnica: Relatório de Fiscalização Contratual
 
-<hr></hr> Relatório de Fiscalização Contratual
+<hr> Relatório de Fiscalização Contratual
 
 Contrato nº 123/2024
 Objeto: Prestação de serviços de limpeza e conservação
@@ -28,6 +28,6 @@ Fiscal do Contrato: João da Silva
 7. Conclusão
    A execução contratual está sendo acompanhada conforme as normas aplicáveis, com registro de todas as etapas e aplicação das penalidades cabíveis.
 
-<hr></hr> Assinatura:
+<hr> Assinatura:
 João da Silva
 Fiscal do Contrato
