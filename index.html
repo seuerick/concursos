@@ -1,203 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordion</title>
-    <style>
-      /* Estilo para o accordion */
-      .accordion {
-        max-width: 600px;
-        margin: 20px auto;
-      }
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Concursos</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    h1 { color: #2c3e50; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin-bottom: 0.5em; }
+    .artefatos { margin-left: 1.5em; display: none; }
+    .dir {
+      cursor: pointer;
+      color: #2980b9;
+      user-select: none;
+      position: relative;
+      padding-left: 1.2em;
+    }
+    .dir::before {
+      content: '▶';
+      position: absolute;
+      left: 0;
+      font-size: 0.9em;
+      transition: transform 0.2s;
+    }
+    .expanded.dir::before {
+      content: '▼';
+    }
+    .expanded > .artefatos { display: block; }
+    a { text-decoration: none; color: #2c3e50; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<h1>Concursos e Artefatos</h1>
+<ul id="lista"></ul>
+<script>
+  const url = 'https://api.github.com/repos/seuerick/concursos/contents/';
 
-      .accordion-item {
-        background-color: #f4f4f4;
-        margin-bottom: 10px;
-        border-radius: 5px;
-      }
+  function criarDiretorioLi(nome) {
+    const li = document.createElement('li');
+    li.className = 'dir';
+    li.textContent = nome;
+    li.tabIndex = 0;
+    return li;
+  }
 
-      .accordion-header {
-        padding: 10px;
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-      .accordion-body {
-        display: none;
-        padding: 10px;
-      }
-
-      .accordion-item.active .accordion-body {
-        display: block;
-      }
-
-      .sub-accordion-item {
-        margin-left: 20px;
-      }
-
-      .sub-accordion-body {
-        display: none;
-      }
-
-      .sub-accordion-item.active .sub-accordion-body {
-        display: block;
-      }
-
-      .btn-container {
-        margin-bottom: 10px;
-      }
-
-      .btn {
-        cursor: pointer;
-        padding: 5px 10px;
-        margin-right: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="btn-container">
-      <button class="btn" id="expand-all">Expandir Todos</button>
-      <button class="btn" id="collapse-all">Recolher Todos</button>
-    </div>
-
-    <div class="accordion">
-      <div class="accordion-item">
-        <div class="accordion-header">
-          FUNDAMENTOS DE MACROECONOMIA E MICROECONOMIA (30):
-        </div>
-        <div class="accordion-body">
-          <div class="sub-accordion-item">
-            <div class="accordion-header">I MACROECONOMIA</div>
-            <div class="sub-accordion-body">
-              <div class="sub-accordion-item">
-                <div class="accordion-header">1 Contas nacionais</div>
-                <div class="sub-accordion-body">
-                  <p>Conteúdo de Contas nacionais</p>
-                </div>
-              </div>
-              <div class="sub-accordion-item">
-                <div class="accordion-header">2 Agregados monetários</div>
-                <div class="sub-accordion-body">
-                  <p>Conteúdo de Agregados monetários</p>
-                </div>
-              </div>
-              <div class="sub-accordion-item">
-                <div class="accordion-header">
-                  3 Multiplicador monetário, criação e destruição de moeda
-                </div>
-                <div class="sub-accordion-body">
-                  <p>
-                    Conteúdo de Multiplicador monetário, criação e destruição de
-                    moeda
-                  </p>
-                </div>
-              </div>
-              <div class="sub-accordion-item">
-                <div class="accordion-header">
-                  4 Contas do sistema monetário
-                </div>
-                <div class="sub-accordion-body">
-                  <p>Conteúdo de Contas do sistema monetário</p>
-                </div>
-              </div>
-              <div class="sub-accordion-item">
-                <div class="accordion-header">5 Balanço de pagamentos</div>
-                <div class="sub-accordion-body">
-                  <p>Conteúdo de Balanço de pagamentos</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sub-accordion-item">
-            <div class="accordion-header">II MICROECONOMIA</div>
-            <div class="sub-accordion-body">
-              <div class="sub-accordion-item">
-                <div class="accordion-header">1 Estrutura de mercado</div>
-                <div class="sub-accordion-item">
-                  <div class="accordion-header">
-                    1.1 Formas de organização da atividade econômica, o papel
-                    dos preços, custo de oportunidade e fronteiras das
-                    possibilidades de produção.
-                    <div class="sub-accordion-body">Conteúdo</div>
-                  </div>
-                </div>
-              </div>
-              <div class="sub-accordion-item">
-                <div class="accordion-header">2 Oferta e demanda</div>
-                <div class="sub-accordion-body">
-                  <ul>
-                    <li>2.1 Curvas de indiferença.</li>
-                    <li>2.2 Restrição orçamentária.</li>
-                    <li>2.3 Equilíbrio do consumidor.</li>
-                    <li>2.4 Efeitos preço, renda e substituição.</li>
-                    <li>2.5 Curva de demanda.</li>
-                    <li>2.6 Elasticidade da demanda.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      // Script para o funcionamento do accordion
-      document.addEventListener("DOMContentLoaded", function () {
-        const accordionHeaders = document.querySelectorAll(".accordion-header");
-
-        accordionHeaders.forEach((header) => {
-          header.addEventListener("click", function () {
-            const accordionItem = this.parentElement;
-            accordionItem.classList.toggle("active");
-          });
+  function listarConteudo(apiUrl, ul) {
+    fetch(apiUrl)
+      .then(res => res.json())
+      .then(items => {
+        // Ordena: diretórios primeiro, depois arquivos
+        items.sort((a, b) => {
+          if (a.type === b.type) return a.name.localeCompare(b.name);
+          return a.type === 'dir' ? -1 : 1;
         });
-
-        const subAccordionHeaders = document.querySelectorAll(
-          ".sub-accordion-header"
-        );
-
-        subAccordionHeaders.forEach((header) => {
-          header.addEventListener("click", function () {
-            const subAccordionItem = this.parentElement;
-            subAccordionItem.classList.toggle("active");
-          });
+        items.forEach(item => {
+          if (item.type === 'dir') {
+            const li = criarDiretorioLi(item.name);
+            const subUl = document.createElement('ul');
+            subUl.className = 'artefatos';
+            li.appendChild(subUl);
+            li.addEventListener('click', function(e) {
+              e.stopPropagation();
+              if (li.classList.contains('expanded')) {
+                li.classList.remove('expanded');
+              } else {
+                li.classList.add('expanded');
+                if (!subUl.hasChildNodes()) {
+                  listarConteudo(item.url, subUl);
+                }
+              }
+            });
+            ul.appendChild(li);
+          }
         });
-
-        // Botão para expandir todos os itens
-        document
-          .getElementById("expand-all")
-          .addEventListener("click", function () {
-            const accordionItems = document.querySelectorAll(".accordion-item");
-            accordionItems.forEach((item) => {
-              item.classList.add("active");
-            });
-            const subAccordionItems = document.querySelectorAll(
-              ".sub-accordion-item"
-            );
-            subAccordionItems.forEach((item) => {
-              item.classList.add("active");
-            });
-          });
-
-        // Botão para recolher todos os itens
-        document
-          .getElementById("collapse-all")
-          .addEventListener("click", function () {
-            const accordionItems = document.querySelectorAll(".accordion-item");
-            accordionItems.forEach((item) => {
-              item.classList.remove("active");
-            });
-            const subAccordionItems = document.querySelectorAll(
-              ".sub-accordion-item"
-            );
-            subAccordionItems.forEach((item) => {
-              item.classList.remove("active");
-            });
-          });
+        items.forEach(item => {
+          if (item.type === 'file') {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="${item.download_url}">${item.name}</a>`;
+            ul.appendChild(li);
+          }
+        });
       });
-    </script>
-  </body>
+  }
+
+  const lista = document.getElementById('lista');
+  listarConteudo(url, lista);
+</script>
+</body>
 </html>
