@@ -1,8 +1,8 @@
 ## CONHECIMENTOS BÁSICOS PARA TODAS AS ÁREAS DO CARGO DE PERITO CRIMINAL FEDERAL - 50 ITENS
 
 # LÍNGUA PORTUGUESA
-1. Língua Portuguesa 
-   1.1 Compreensão e interpretação de textos de gêneros variados.
+    1. Língua Portuguesa
+    1.1 Compreensão e interpretação de textos de gêneros variados.
    1.2 Reconhecimento de tipos e gêneros textuais.
    1.3 Domínio da ortografia oficial.
    1.4 Domínio dos mecanismos de coesão textual.
@@ -29,19 +29,19 @@
        1.7.4 Adequação do formato do texto ao gênero.
 
 # INFORMÁTICA
-2. Informática
-   2.1 Componentes de um computador (hardware e software).
-   2.2 Noções de sistemas operacionais: Windows, Android e iOS.
-   2.3 Navegadores de Internet, webmail e ferramentas de produtividade do Microsoft Office 365 (Word, Excel, Outlook, Powerpoint, OneDrive, Teams).
-   2.4 Noções de segurança da informação.
-       2.4.1 Responsabilidades e deveres dos usuários de serviços de TI.
-       2.4.2 Malware: vírus, worms, cavalos de Troia (trojans), spyware, ransomware, backdoor, zero-day exploits e keyloggers.
-       2.4.3 Phishing, baiting e engenharia social: métodos e canais utilizados.
-       2.4.4 Aplicativos para segurança: antivírus, Endpoint Detection and Response (EDR), firewall, anti-spyware, gerenciadores de senhas.
-       2.4.5 Múltiplos Fatores de Autenticação (MFA).
-       2.4.6 Assinatura e certificação digital.
-   2.5 Computação em nuvem: conceitos envolvidos, vantagens e desvantagens.
-   2.6 Noções de bancos de dados.
+    2. Informática
+    2.1 Componentes de um computador (hardware e software).
+    2.2 Noções de sistemas operacionais: Windows, Android e iOS.
+    2.3 Navegadores de Internet, webmail e ferramentas de produtividade do Microsoft Office 365 (Word, Excel, Outlook, Powerpoint, OneDrive, Teams).
+    2.4 Noções de segurança da informação.
+    2.4.1 Responsabilidades e deveres dos usuários de serviços de TI.
+    2.4.2 Malware: vírus, worms, cavalos de Troia (trojans), spyware, ransomware, backdoor, zero-day exploits e keyloggers.
+    2.4.3 Phishing, baiting e engenharia social: métodos e canais utilizados.
+    2.4.4 Aplicativos para segurança: antivírus, Endpoint Detection and Response (EDR), firewall, anti-spyware, gerenciadores de senhas.
+    2.4.5 Múltiplos Fatores de Autenticação (MFA).
+    2.4.6 Assinatura e certificação digital.
+    2.5 Computação em nuvem: conceitos envolvidos, vantagens e desvantagens.
+    2.6 Noções de bancos de dados.
        2.6.1 Conceitos básicos e características.
        2.6.2 Dados estruturados e não estruturados.
        2.6.3 Banco de dados relacionais.
