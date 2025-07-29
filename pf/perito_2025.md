@@ -1,6 +1,7 @@
 ## CONHECIMENTOS BÁSICOS PARA TODAS AS ÁREAS DO CARGO DE PERITO CRIMINAL FEDERAL - 50 ITENS
 
-# 1. LÍNGUA PORTUGUESA
+# LÍNGUA PORTUGUESA
+1. Língua Portuguesa 
    1.1 Compreensão e interpretação de textos de gêneros variados.
    1.2 Reconhecimento de tipos e gêneros textuais.
    1.3 Domínio da ortografia oficial.
@@ -27,7 +28,8 @@
        1.7.3 Adequação da linguagem ao tipo de documento.
        1.7.4 Adequação do formato do texto ao gênero.
 
-2. INFORMÁTICA
+# INFORMÁTICA
+2. Informática
    2.1 Componentes de um computador (hardware e software).
    2.2 Noções de sistemas operacionais: Windows, Android e iOS.
    2.3 Navegadores de Internet, webmail e ferramentas de produtividade do Microsoft Office 365 (Word, Excel, Outlook, Powerpoint, OneDrive, Teams).
