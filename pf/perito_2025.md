@@ -1,12 +1,12 @@
 ## CONHECIMENTOS BÁSICOS PARA TODAS AS ÁREAS DO CARGO DE PERITO CRIMINAL FEDERAL - 50 ITENS
 
 # 1. LÍNGUA PORTUGUESA
-   1.1. Compreensão e interpretação de textos de gêneros variados.
-   1.2. Reconhecimento de tipos e gêneros textuais.
-   1.3. Domínio da ortografia oficial.
-   1.4. Domínio dos mecanismos de coesão textual.
-       1.4.1. Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual.
-       1.4.2. Emprego de tempos e modos verbais.
+   1.1 Compreensão e interpretação de textos de gêneros variados.
+   1.2 Reconhecimento de tipos e gêneros textuais.
+   1.3 Domínio da ortografia oficial.
+   1.4 Domínio dos mecanismos de coesão textual.
+       1.4.1 Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual.
+       1.4.2 Emprego de tempos e modos verbais.
    1.5 Domínio da estrutura morfossintática do período.
        1.5.1 Emprego das classes de palavras.
        1.5.2 Relações de coordenação entre orações e entre termos da oração.
