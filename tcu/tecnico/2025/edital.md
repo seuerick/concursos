@@ -1,11 +1,11 @@
 **CONHECIMENTOS BÁSICOS – 50 ITENS**
----
-### LÍNGUA PORTUGUESA
+--
 
-1. Compreensão e interpretação de textos de gêneros variados.  
-1.2. Reconhecimento de tipos e gêneros textuais.  
-1.3. Domínio da ortografia oficial.  
-1.4. Domínio dos mecanismos de coesão textual:  
+##### LÍNGUA PORTUGUESA
+    1. Compreensão e interpretação de textos de gêneros variados.  
+       1.2. Reconhecimento de tipos e gêneros textuais.  
+    1.3. Domínio da ortografia oficial.  
+    1.4. Domínio dos mecanismos de coesão textual:  
 1.4.1. Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual.  
    1.4.2. Emprego de tempos e modos verbais.  
    1.5 Domínio da estrutura morfossintática do período.  
@@ -30,10 +30,11 @@
    2.3 Conhecimento e uso das formas contemporâneas da linguagem inglesa.
 
 #### DIREITO CONSTITUCIONAL
-3.1. Constituição da República Federativa do Brasil de 1988.  
-3.1.1. Conceito, classificações, princípios fundamentais, emendas constitucionais.  
-3.2. Direitos e garantias fundamentais.  
-3.2.1. Direitos e deveres individuais e coletivos, direitos sociais, nacionalidade, cidadania, direitos políticos, partidos políticos.
+ 3. Direito Constitucional 
+   3.1. Constituição da República Federativa do Brasil de 1988.  
+       3.1.1. Conceito, classificações, princípios fundamentais, emendas constitucionais.  
+   3.2. Direitos e garantias fundamentais.  
+      3.2.1. Direitos e deveres individuais e coletivos, direitos sociais, nacionalidade, cidadania, direitos políticos, partidos políticos.
    3.3 Organização político-administrativa.
        3.3.1 União, estados, Distrito Federal e municípios.
    3.4 Administração pública.
