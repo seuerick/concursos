@@ -1,0 +1,46 @@
+LÍNGUA PORTUGUESA: 1 Compreensão e interpretação de textos. 2 Tipologia textual. 3 Ortografia oficial. 4
+Acentuação gráfica. 5 Emprego das classes de palavras. 6 Emprego do sinal indicativo de crase. 7 Sintaxe da
+oração e do período. 8 Pontuação. 9 Concordância nominal e verbal. 10 Regência nominal e verbal. 11
+Significação das palavras. 12 Redação de correspondências oficiais.
+CONTROLE EXTERNO: 1 Tribunal de Contas da União (TCU): natureza, competência e jurisdição. 2
+Organização e funcionamento do TCU. 3 Tipos de fiscalização. 4 Deliberações e recursos (Lei nº 8.443/1992
+e Regimento Interno do TCU). 5 Teoria geral do processo.
+
+DIREITO CONSTITUCIONAL: 1 Fundamentos, objetivos e princípios da Constituição Federal de 1988. 2
+Direitos e garantias fundamentais. 2.1 Direitos e deveres individuais e coletivos. 2.2 Direitos sociais. 3
+Administração pública. 3.1 Estruturas básicas. 3.2 Princípios constitucionais. 3.3 Servidores públicos. 4
+Finanças públicas: normas gerais e orçamento público. 5 Papel constitucional do TCU.
+NOÇÕES DE INFORMÁTICA: 1 Conceitos básicos de informática: componentes funcionais de computadores,
+armazenamento e organização de dados. 2 Conceitos e características de sistemas operacionais: Windows
+XP e versões posteriores. 3 Conceitos básicos e utilização de aplicativos para edição de textos, planilhas
+eletrônicas, apresentações, gerenciadores de banco de dados e correio eletrônico: ambiente Microsoft
+Office 2007 e versões posteriores. 4 Conceitos básicos e tecnologias relacionados a Internet e Intranet:
+aplicativos de navegação, pesquisa e compartilhamento de informações. 5 Conceitos básicos de segurança
+da informação.
+
+ATUALIDADES: 1 Tópicos atuais no Brasil e no mundo, relativos a economia, política, saúde, sociedade,
+meio ambiente, desenvolvimento sustentável, educação, energia, ciência e tecnologia.
+17.2.1.2 CONHECIMENTOS ESPECÍFICOS
+DIREITO ADMINISTRATIVO: 1 Organização administrativa da União. 1.1 Administração direta e indireta. 1.2
+Autarquias, fundações públicas. 1.3 Empresas públicas. 1.4 Sociedades de economia mista. 1.5 Entidades
+paraestatais. 2 Lei nº 9.784/1999. 3 Processo administrativo. 3.1 Princípios. 3.2 Direitos e deveres dos
+administrados. 3.3 Instauração, formalização e instrução. 3.4 Recursos. 3.5 Invalidação, revogação e
+convalidação de atos. 3.6 Prazos e sanções administrativas. 4 Atos administrativos. 4.1 Conceito, requisitos,
+elementos, pressupostos e classificação. 4.2 Vinculação e discricionariedade. 4.3 Revogação e invalidação. 5
+Lei nº 8.666/1993 e Lei nº 10.520/2002. 6 Licitação. 6.1 Conceito, finalidades, princípios e objeto;
+obrigatoriedade, dispensa, inexigibilidade e vedação. 6.2 Modalidades. 6.3 Procedimento, revogação e
+anulação. 6.4 Sanções. 6.5 Normas gerais de licitação. 7 Contratos administrativos. 7.1 Conceito,
+peculiaridades e interpretação. 7.2 Formalização. 7.3 Execução. 7.4 Inexecução, revisão e rescisão. 8 Lei nº
+8.112/1990. 9 Agentes públicos. 9.1 Servidores públicos. 9.2 Organização do serviço público. 9.3 Normas
+constitucionais concernentes aos servidores públicos. 9.4 Direitos e deveres dos servidores públicos. 9.5
+Responsabilidades dos servidores públicos. 9.6 Processo administrativo disciplinar, sindicância e inquérito.
+10 Lei nº 12.527/2011. 10.1 Disposições gerais. 10.2 Acesso a informações e sua divulgação. 10.3 Restrições
+de acesso à informação. 10.4 Responsabilidades. 11 Lei nº 12.618/2012. 11.1 Regime de previdência
+complementar.
+
+EXECUÇÃO ORÇAMENTÁRIA E FINANCEIRA: 1 Programação, execução e controle de recursos
+orçamentários e financeiros. 1.1 Empenho, liquidação e pagamento da despesa. 1.2 Guia de Recolhimento
+da União (GRU). 1.3 Controle e pagamento de restos a pagar e de despesas de exercícios anteriores. 1.4
+Suprimento de fundos. 1.5 Conformidade diária e documental. 1.6 Rol de responsáveis. 2 Retenção e
+recolhimento de tributos incidentes sobre bens e serviços. 3 Noções de Siafi e CPR – contas a pagar e a
+receber. 4 Lei nº 4.320/1964. 5 Lei de Responsabilidade Fiscal (Lei Complementar nº 101/2000).
