@@ -13,21 +13,30 @@ das EFSs é assegurada por meio do(a):
 (A) reconhecimento de autonomia reforçada que lhes garante
 poder normativo técnico, ainda que tais entidades integrem a
 estrutura do Poder Legislativo;  
+> Errado: A autonomia reforçada com poder normativo técnico não é uma característica das Entidades Fiscalizadoras Superiores (EFSs) no Brasil. Embora essas entidades, como o Tribunal de Contas da União (TCU), possuam autonomia administrativa e financeira, elas não detêm poder normativo técnico. A função principal das EFSs é fiscalizar a gestão pública e garantir a legalidade, legitimidade e economicidade na aplicação dos recursos públicos, mas sem a capacidade de criar normas técnicas vinculantes. Portanto, a alternativa A está incorreta.
+
 (B) reconhecimento dos atributos institucionais relativos à
 autoadministração e ao autogoverno, ainda que tais
 entidades estejam destituídas de autonomia orçamentária;  
+> Errado: A independência das Entidades Fiscalizadoras Superiores (EFSs) no Brasil, como o Tribunal de Contas da União (TCU), não se caracteriza pela ausência de autonomia orçamentária. Na verdade, essas entidades possuem autonomia administrativa, financeira e orçamentária, o que lhes permite exercer suas funções de fiscalização de maneira independente. A alternativa B está incorreta porque sugere que as EFSs carecem de autonomia orçamentária, o que não é verdade.
+
 (C) reconhecimento de que suas competências derivam
 diretamente da Constituição da República de 1988 e são
 exercidas de maneira autônoma, ainda que haja
-subordinação meramente administrativa ao Poder Legislativo;  
+subordinação meramente administrativa ao Poder Legislativo; 
+> Correto: A independência das Entidades Fiscalizadoras Superiores (EFSs) no Brasil, como o Tribunal de Contas da União (TCU), é assegurada pelo fato de que suas competências derivam diretamente da Constituição Federal de 1988. Essas entidades exercem suas funções de maneira autônoma, mesmo estando vinculadas ao Poder Legislativo. Essa autonomia é crucial para garantir que as EFSs possam fiscalizar a gestão pública sem interferências externas, mantendo a imparcialidade e a eficácia em suas auditorias e controles. Portanto, a alternativa correta é a letra C.
+
 (D) extensão dos mesmos mecanismos de proteção que
 resguardam a independência do Poder Judiciário,
 reconhecendo-lhes capacidade de autogoverno e autonomia
 administrativa, financeira e orçamentária;  
+> Errado: A independência das Entidades Fiscalizadoras Superiores (EFSs) no Brasil, como o Tribunal de Contas da União (TCU), não é equiparada à independência do Poder Judiciário. Embora as EFSs possuam autonomia administrativa, financeira e orçamentária, elas não têm a mesma proteção institucional que resguarda a independência do Poder Judiciário. As EFSs estão vinculadas ao Poder Legislativo e exercem suas funções de fiscalização dentro desse contexto. Portanto, a alternativa D está incorreta.
+
 (E) extensão dos mesmos mecanismos de proteção que
 resguardam a independência do Poder Legislativo,
 reconhecendo-lhes capacidade de autoadministração e de
 autogoverno.
+> Errado: A independência das Entidades Fiscalizadoras Superiores (EFSs) no Brasil, como o Tribunal de Contas da União (TCU), não é equiparada à independência do Poder Legislativo. Embora as EFSs possuam autonomia administrativa, financeira e orçamentária, elas não têm a mesma proteção institucional que resguarda a independência do Poder Legislativo. As EFSs exercem suas funções de fiscalização dentro do contexto do Poder Legislativo, mas não são parte integrante dele. Portanto, a alternativa E está incorreta.
 ---
 22
 Dentre as expressivas competências constitucionalmente
