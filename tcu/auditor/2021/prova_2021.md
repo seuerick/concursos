@@ -52,27 +52,37 @@ que:
 administrativas adotadas por órgãos e entidades que lhes
 sejam jurisdicionados, ainda que tais litígios não atinjam o
 patrimônio público ou causem prejuízo ao erário;  
+> Errado: O Tribunal de Contas da União (TCU) não atua como instância revisora de decisões administrativas adotadas por órgãos e entidades sob sua jurisdição, a menos que essas decisões envolvam questões relacionadas ao patrimônio público ou causem prejuízo ao erário. O TCU tem como função principal fiscalizar a gestão e a aplicação dos recursos públicos, mas não revisa todas as decisões administrativas. Portanto, a alternativa A está incorreta.
+
 (B) o TCU exerce pleno controle do poder discricionário da
 Administração Pública, cabendo-lhe definir a melhor
 alternativa a ser adotada pelo gestor público nas hipóteses
 em que estejam presentes duas ou mais alternativas
-legalmente válidas;-  
+legalmente válidas;
+> Errado: O Tribunal de Contas da União (TCU) não exerce pleno controle sobre o poder discricionário da Administração Pública. O TCU fiscaliza a legalidade, legitimidade e economicidade dos atos administrativos, mas não tem a competência para definir a melhor alternativa a ser adotada pelo gestor público quando existem duas ou mais opções legalmente válidas. A discricionariedade administrativa permite que os gestores escolham entre alternativas dentro dos limites legais, e o TCU não interfere nessa escolha, a menos que haja ilegalidade ou irregularidade. Portanto, a alternativa B está incorreta.
+
 (C) a prerrogativa do TCU para julgamento das contas daqueles
 que derem causa a perda, extravio ou outra irregularidade de
 que resulte prejuízo ao erário não se limita aos
 administradores ou agentes públicos, podendo abranger
-particulares;  
+particulares;
+> Correto: O Tribunal de Contas da União (TCU) tem a prerrogativa de julgar as contas daqueles que derem causa a perda, extravio ou outra irregularidade que resulte em prejuízo ao erário, e essa competência não se limita apenas aos administradores ou agentes públicos. O TCU pode, sim, abranger particulares que tenham causado tais prejuízos ao erário público. Portanto, a alternativa correta é a letra C.
+
 (D) compete ao TCU, na apreciação de denúncias e
 representações contra irregularidades praticadas pela
 Administração Pública Federal, proferir provimentos
 jurisdicionais reclamados por particulares para salvaguarda
-de seus direitos e interesses subjetivos;  
+de seus direitos e interesses subjetivos;
+> Errado: O Tribunal de Contas da União (TCU) não tem competência para proferir provimentos jurisdicionais reclamados por particulares para salvaguarda de seus direitos e interesses subjetivos. O TCU atua na fiscalização da gestão pública e na apreciação de denúncias e representações contra irregularidades, mas não exerce função jurisdicional no sentido de julgar litígios entre particulares ou entre particulares e a Administração Pública. Portanto, a alternativa D está incorreta.
+
 (E) a competência do TCU para processar e julgar tomadas de
 contas não se restringe aos casos de irregularidades que
 impliquem dano ao erário, estendendo-se também para a
 quantificação de prejuízos imateriais decorrentes de danos
 morais, bem como à retirada de atos normativos e
 enunciados do mundo jurídico.
+> Errado: A competência do Tribunal de Contas da União (TCU) para processar e julgar tomadas de contas está restrita aos casos de irregularidades que impliquem dano ao erário. O TCU não tem competência para quantificar prejuízos imateriais decorrentes de danos morais, nem para retirar atos normativos e enunciados do mundo jurídico. Essas questões são de competência do Poder Judiciário. Portanto, a alternativa E está incorreta.
+
 ---
 23
 O Tribunal de Contas da União (TCU), ao apreciar narrativa de
