@@ -1,10 +1,10 @@
 Prova Objetiva
 
-|         | Acertos | Erros | Total |
-|---------|---------|-------|-------|
-| Conhecimentos Básicos | 38      | 12    | 26    |
+|                           | Acertos | Erros | Total |
+|---------------------------|---------|-------|-------|
+| Conhecimentos Básicos     | 38      | 12    | 26    |
 | Conhecimentos Específicos | 57      | 13    | 44    |
-|  | 95      | 25    | 70    |
+|                           | 95      | 25    | 70    |
 
 Prova Discursiva
 
