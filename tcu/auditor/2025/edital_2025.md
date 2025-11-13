@@ -1,30 +1,49 @@
-CONHECIMENTOS BÁSICOS  
-LÍNGUA PORTUGUESA: 1 Compreensão e interpretação de textos de gêneros variados. 2 Reconhecimento
-de tipos e gêneros textuais. 3 Domínio da ortografia oficial. 4 Domínio dos mecanismos de coesão textual.
-4.1 Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos
-de sequenciação textual. 4.2 Emprego de tempos e modos verbais. 5 Domínio da estrutura morfossintática
-do período. 5.1 Emprego das classes de palavras. 5.2 Relações de coordenação entre orações e entre termos
-da oração. 5.3 Relações de subordinação entre orações e entre termos da oração. 5.4 Emprego dos sinais de
-pontuação. 5.5 Concordância verbal e nominal. 5.6 Regência verbal e nominal. 5.7 Emprego do sinal indicativo
-de crase. 5.8 Colocação dos pronomes átonos. 6 Reescrita de frases e parágrafos do texto. 6.1 Significação
-das palavras. 6.2 Substituição de palavras ou de trechos de texto. 6.3 Reorganização da estrutura de orações
-e de períodos do texto. 6.4 Reescrita de textos de diferentes gêneros e níveis de formalidade.
+**CONHECIMENTOS BÁSICOS – 50 ITENS**
+-- 
 
-LÍNGUA INGLESA: 1 Compreensão de textos variados: domínio do vocabulário e da estrutura da língua, ideias
-principais e secundárias, explícitas e implícitas, relações intratextuais e intertextuais. 2 Itens gramaticais
-relevantes para compreensão de conteúdos semânticos. 3 Conhecimento e uso das formas contemporâneas
-da linguagem inglesa.
+##### LÍNGUA PORTUGUESA: 
+    1. Compreensão e interpretação de textos de gêneros variados. 
+    2. Reconhecimento de tipos e gêneros textuais. 
+    3. Domínio da ortografia oficial. 
+    4. Domínio dos mecanismos de coesão textual.
+        4.1. Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual. 
+        4.2. Emprego de tempos e modos verbais. 
+    5. Domínio da estrutura morfossintática do período. 
+        5.1. Emprego das classes de palavras. 
+        5.2. Relações de coordenação entre orações e entre termos da oração. 
+        5.3. Relações de subordinação entre orações e entre termos da oração. 
+        5.4. Emprego dos sinais de pontuação. 
+        5.5. Concordância verbal e nominal. 
+        5.6. Regência verbal e nominal. 
+        5.7. Emprego do sinal indicativo de crase. 
+        5.8 Colocação dos pronomes átonos. 
+    6. Reescrita de frases e parágrafos do texto. 
+        6.1. Significação das palavras. 
+        6.2. Substituição de palavras ou de trechos de texto. 
+        6.3. Reorganização da estrutura de orações e de períodos do texto. 
+        6.4. Reescrita de textos de diferentes gêneros e níveis de formalidade.
+
+#### LÍNGUA INGLESA: 
+    1. Compreensão de textos variados: domínio do vocabulário e da estrutura da língua, ideias principais e secundárias, explícitas e implícitas, relações intratextuais e intertextuais. 
+    2. Itens gramaticais relevantes para compreensão de conteúdos semânticos. 
+    3. Conhecimento e uso das formas contemporâneas da linguagem inglesa.
 
 RACIOCÍNIO ANÁLITICO: 1 Raciocínio analítico e a argumentação. 1.1 O uso do senso crítico na
 argumentação. 1.2 Tipos de Argumentos: argumentos falaciosos e apelativos. 1.3 Comunicação eficiente de
 argumentos.
 
-CONTROLE EXTERNO: 1 Conceito, tipos e formas de controle. 2 Controle interno e externo. 3 Controle
-parlamentar. 4 Controle pelos tribunais de contas. 5 Controle administrativo. 6 Lei nº 8.429/1992 (Lei de
-Improbidade Administrativa). 7 Sistemas de controle jurisdicional da administração pública. 7.1 Contencioso
-administrativo e sistema da jurisdição una. 8 Controle jurisdicional da administração pública no direito
-brasileiro. 9 Controle da atividade financeira do Estado: espécies e sistemas. 10 Tribunal de Contas da União
-(TCU), Tribunais de Contas dos Estados e do Distrito Federal.
+#### CONTROLE EXTERNO: 
+    1. Conceito, tipos e formas de controle. 
+    2. Controle interno e externo. 
+    3. Controle parlamentar. 
+    4. Controle pelos tribunais de contas. 
+    5. Controle administrativo. 
+    6. Lei nº 8.429/1992 (Lei de Improbidade Administrativa). 
+    7. Sistemas de controle jurisdicional da administração pública. 
+        7.1. Contencioso administrativo e sistema da jurisdição una. 
+    8. Controle jurisdicional da administração pública no direito brasileiro. 
+    9. Controle da atividade financeira do Estado: espécies e sistemas. 
+    10. Tribunal de Contas da União (TCU), Tribunais de Contas dos Estados e do Distrito Federal.
 
 ADMINISTRAÇÃO PÚBLICA: 1 Administração. 1.1 Abordagens clássica, burocrática e sistêmica da
 administração. 1.2 Evolução da administração pública no Brasil após 1930; reformas administrativas; a nova
