@@ -605,16 +605,18 @@ orçamentárias, podendo ser alterado durante o exercício
 mediante justificativa técnica e aprovação do Poder
 Legislativo. 
 
-Julgue os itens seguintes, à luz das normas de execução
-orçamentária.
+Julgue os itens seguintes, à luz das normas de execução orçamentária.
+
 95 A liquidação da despesa somente poderá ser efetivada após a
 verificação do direito adquirido pelo credor, mediante
 apresentação dos documentos comprobatórios da entrega dos
 bens conforme especificações contratuais.
+>
 96 O empenho da despesa deve ocorrer obrigatoriamente antes
 da realização do procedimento licitatório, garantindo-se a
 reserva orçamentária necessária para o cumprimento da
 obrigação assumida.
+>
 97 Caso seja identificado erro no valor empenhado, sendo este
 superior ao valor da obrigação efetivamente assumida,
 deve-se proceder ao cancelamento parcial do empenho, com
@@ -663,41 +665,67 @@ recursos públicos.
 pelo responsável designado, abrangendo todos os
 documentos de receita e despesa processados no período,
 sendo vedada a delegação dessa atribuição.
-Acerca do conceito, tipos e formas de controle, julgue os itens a
-seguir.
+
+Acerca do conceito, tipos e formas de controle, julgue os itens a seguir.
+
 106 O controle concomitante ocorre durante a execução de um
 ato ou processo administrativo, tendo como principal
 vantagem a possibilidade de correção de rumos antes da sua
 finalização, o que minimiza danos e irregularidades.
+> Certo: O controle concomitante é realizado durante a execução de um ato ou processo administrativo, permitindo a identificação e correção de eventuais irregularidades antes da finalização do ato. Essa abordagem visa minimizar danos e garantir a conformidade com as normas e regulamentos aplicáveis. 
+> Portanto, a afirmação está correta.
+
 107 O controle de mérito, também conhecido como controle de
 conveniência e oportunidade, é diretamente exercido tanto
 pelo controle interno quanto pelo controle externo, sendo-lhe
 pertinente a revisão de atos discricionários da administração
 pública.
+> Errado: O controle de mérito, ou controle de conveniência e oportunidade, é
+> exercido exclusivamente pelo controle externo, que é realizado pelo Poder
+> Legislativo e pelos tribunais de contas. O controle interno, por sua vez, não
+> exerce controle de mérito sobre atos discricionários da administração pública.
+> Portanto, a afirmação está incorreta.
+
 108 O controle interno é prerrogativa exclusiva do
 Poder Judiciário, visando à regularidade e eficiência de suas
 atividades.
+> Errado: O controle interno é uma função exercida pelos próprios órgãos e entidades da administração pública, não sendo prerrogativa exclusiva do Poder Judiciário. O controle interno visa garantir a regularidade, eficiência e eficácia das atividades administrativas.
+> Portanto, a afirmação está incorreta.
+
 Julgue os itens subsequentes, relativos ao controle parlamentar e
 ao controle administrativo.
+
 109 O controle administrativo, inerente à própria administração
 pública, pode ser exercido de ofício ou mediante provocação
 de terceiros e abrange tanto a análise de legalidade quanto a
 de mérito do ato ou da conduta administrativa.
+> Certo: O controle administrativo é exercido pela própria administração pública, podendo ser realizado de ofício ou mediante provocação de terceiros. Esse controle abrange tanto a análise de legalidade quanto a de mérito dos atos ou condutas administrativas.
+> Portanto, a afirmação está correta.
+
 110 Dado o princípio da autotutela, que embasa o controle
 administrativo, a administração pública tem o poder-dever de
 anular seus próprios atos eivados de ilegalidade, mas não de
 revogá-los por motivo de conveniência ou oportunidade.
+> Errado: O princípio da autotutela confere à administração pública o poder-dever de anular seus próprios atos eivados de ilegalidade, bem como o poder de revogá-los por motivo de conveniência ou oportunidade.
+> Portanto, a afirmação está incorreta. 
+
 111 A instalação de comissão parlamentar de inquérito (CPI) no
 âmbito do Congresso Nacional exige a aprovação da maioria
 absoluta dos membros de cada uma das casas (Câmara dos
 Deputados e Senado Federal), além da indicação de fato
 determinado e prazo certo de duração.
+> Errado: A instalação de comissão parlamentar de inquérito (CPI) no âmbito do Congresso Nacional exige a aprovação de um terço dos membros de cada uma das casas (Câmara dos Deputados e Senado Federal), conforme previsto no artigo 58, §3º, da Constituição Federal de 1988.
+> Portanto, a afirmação está incorreta. 
+
 112 Uma das prerrogativas do Congresso Nacional, no exercício
 do controle externo, é a possibilidade de sustar atos
 normativos do Poder Executivo que exorbitem do poder
 regulamentar ou dos limites de delegação legislativa.
 Julgue os próximos itens, relacionados ao contencioso
 administrativo e ao sistema de jurisdição una.
+> Certo: De acordo com o artigo 49, inciso V, da Constituição Federal de 1988, o Congresso Nacional tem a prerrogativa de sustar atos normativos do Poder Executivo que exorbitem do poder regulamentar ou dos limites de delegação legislativa.
+> Portanto, a afirmação está correta.
+
 113 A criação de um tribunal administrativo com poder de
 julgamento definitivo, cuja decisão impedisse a revisão
 judicial sobre o mérito do ato, seria compatível com o
