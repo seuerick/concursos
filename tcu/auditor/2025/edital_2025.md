@@ -1,7 +1,14 @@
-# CONHECIMENTOS BÁSICOS – 50 ITENS
+# QUADRO DE PROVAS (ATUALIZADO)
+
+- P1 – Prova objetiva de Conhecimentos Básicos: 100 itens (Certo/Errado).
+- P2 – Prova objetiva de Conhecimentos Específicos: 100 itens (Certo/Errado).
+- P3 – Prova discursiva: 3 questões (10 pontos cada) + 1 peça técnica (30 pontos) = 60 pontos.
+- Programa de Formação: etapa eliminatória.
+
+*Fonte: Edital nº 1 – TCU/AUFC, de 24/10/2025, versão consolidada até o Edital nº 4 (08/12/2025).*
 
 ## Sumário
-- [CONHECIMENTOS BÁSICOS – 50 ITENS](#conhecimentos-básicos--50-itens)
+- [CONHECIMENTOS BÁSICOS – 100 ITENS](#conhecimentos-básicos--100-itens)
   - [Língua Portuguesa](#língua-portuguesa)
   - [Língua Inglesa](#língua-inglesa)
   - [Raciocínio Analítico](#raciocínio-analítico)
@@ -10,7 +17,7 @@
   - [Direito Constitucional](#direito-constitucional)
   - [Direito Administrativo](#direito-administrativo)
   - [Auditoria Governamental](#auditoria-governamental)
-- [CONHECIMENTOS ESPECÍFICOS](#conhecimentos-específicos)
+- [CONHECIMENTOS ESPECÍFICOS – 100 ITENS](#conhecimentos-específicos)
   - [Infraestrutura de TI](#infraestrutura-de-ti)
   - [Engenharia de Dados](#engenharia-de-dados)
   - [Engenharia de Software](#engenharia-de-software)
@@ -292,6 +299,7 @@
    - Planos de continuidade de negócios e testes de DR.
 
 ### Engenharia de Dados
+*Retificado pelo Edital nº 3 – TCU/AUFC, de 15/11/2025.*
 1. Bancos de Dados.
    - Relacionais: Oracle e Microsoft SQL Server.
    - Não relacionais (NoSQL): Elasticsearch e MongoDB.
@@ -453,6 +461,7 @@
      - IN SGD/ME nº 65/2021 – Gestão de riscos em contratações de TI.
 
 ### Gestão de Tecnologia da Informação
+*Retificado pelo Edital nº 2 – TCU/AUFC, de 29/10/2025.*
 1. Gerenciamento de serviços (ITIL v4): conceitos básicos, estrutura e objetivos.
 2. Governança de TI (COBIT 2019): conceitos básicos, estrutura e objetivos.
 3. Metodologias ágeis: Scrum, XP, Kanban, TDD, BDD e DDD.
