@@ -676,17 +676,17 @@
     state.currentPath = path;
     const crumbs = renderBreadcrumbs(path);
     app.innerHTML = crumbs + `<div class="view"><div class="skeleton" style="height:60vh"></div></div>`;
+    const name = path.split('/').pop();
+    const ext = name.split('.').pop().toLowerCase();
+    const rawUrl = RAW + encodeURIComponent(path);
     try {
-      const meta = await fetchJson(API + encodeURIComponent(path));
-      const name = path.split('/').pop();
-      const ext = name.split('.').pop().toLowerCase();
       if (ext === 'md') {
-        const text = await (await fetch(meta.download_url)).text();
+        const text = await (await fetch(rawUrl)).text();
         renderMarkdown(name, path, text);
       } else if (ext === 'pdf') {
-        renderPdf(name, path, meta.download_url);
+        renderPdf(name, path, rawUrl);
       } else {
-        const text = await (await fetch(meta.download_url)).text();
+        const text = await (await fetch(rawUrl)).text();
         renderRaw(name, path, text);
       }
     } catch (err) {
@@ -708,11 +708,25 @@
     </div>`;
   }
 
-  function renderMarkdown(name, path, text) {
+  function ensureMarkdownLibs() {
+    return new Promise((resolve) => {
+      if (window.marked && window.DOMPurify) return resolve(true);
+      const start = Date.now();
+      const check = () => {
+        if (window.marked && window.DOMPurify) resolve(true);
+        else if (Date.now() - start > 5000) resolve(false);
+        else setTimeout(check, 100);
+      };
+      check();
+    });
+  }
+
+  async function renderMarkdown(name, path, text) {
     const header = fileHeader(name, path, `<a class="btn primary" href="${RAW}${encodeURIComponent(path)}" download>Baixar</a>`);
     app.innerHTML = renderBreadcrumbs(path) + `<div class="view fade-in">${header}<div class="markdown-body" id="mdBody"></div></div>`;
     const body = $('#mdBody');
-    if (window.marked && window.DOMPurify) {
+    const ready = await ensureMarkdownLibs();
+    if (ready) {
       body.innerHTML = window.DOMPurify.sanitize(window.marked.parse(text, { gfm: true, breaks: true }));
     } else {
       body.innerHTML = `<pre class="raw-pre">${escapeHtml(text)}</pre>`;
