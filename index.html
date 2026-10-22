@@ -2,90 +2,797 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Concursos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materiais de estudo para concursos públicos brasileiros, organizados por instituição e ano.">
+  <meta name="color-scheme" content="light dark">
+  <title>Concursos — Materiais de Estudo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
   <style>
-    body { font-family: Arial, sans-serif; margin: 2em; }
-    h1 { color: #2c3e50; }
-    ul { list-style-type: none; padding: 0; }
-    li { margin-bottom: 0.5em; }
-    .artefatos { margin-left: 1.5em; display: none; }
-    .dir {
-      cursor: pointer;
-      color: #2980b9;
-      user-select: none;
-      position: relative;
-      padding-left: 1.2em;
+    /* ============ Design System ============ */
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --surface-2: #f1f5f9;
+      --text: #0f172a;
+      --muted: #64748b;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --accent-soft: #eff6ff;
+      --border: #e2e8f0;
+      --code-bg: #f1f5f9;
+      --shadow-sm: 0 1px 2px rgba(15, 23, 42, .06);
+      --shadow-md: 0 4px 16px rgba(15, 23, 42, .08);
+      --radius: 12px;
+      --radius-sm: 8px;
+      --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      --header-h: 64px;
     }
-    .dir::before {
-      content: '▶';
+    [data-theme="dark"] {
+      --bg: #0b1220;
+      --surface: #111a2c;
+      --surface-2: #1a2438;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #60a5fa;
+      --accent-hover: #93c5fd;
+      --accent-soft: #1e293b;
+      --border: #26334d;
+      --code-bg: #0b1220;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, .4);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, .5);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      transition: background .25s ease, color .25s ease;
+    }
+    a { color: var(--accent); }
+    button { font-family: inherit; }
+
+    /* ============ Header ============ */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      height: var(--header-h);
+      background: color-mix(in srgb, var(--surface) 85%, transparent);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      height: 100%;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .brand-icon {
+      font-size: 1.6rem;
+      display: grid;
+      place-items: center;
+      width: 42px; height: 42px;
+      background: var(--accent-soft);
+      border-radius: var(--radius-sm);
+    }
+    .brand h1 { font-size: 1.15rem; margin: 0; line-height: 1.2; }
+    .brand-sub { margin: 0; font-size: .78rem; color: var(--muted); }
+    .header-actions { display: flex; align-items: center; gap: 10px; }
+
+    .search-box { position: relative; display: flex; align-items: center; }
+    .search-box svg {
       position: absolute;
-      left: 0;
-      font-size: 0.9em;
-      transition: transform 0.2s;
+      left: 12px;
+      width: 16px; height: 16px;
+      color: var(--muted);
+      pointer-events: none;
     }
-    .expanded.dir::before {
-      content: '▼';
+    .search-box input {
+      width: min(320px, 40vw);
+      padding: 9px 12px 9px 36px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface-2);
+      color: var(--text);
+      font-size: .9rem;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s, background .2s;
     }
-    .expanded > .artefatos { display: block; }
-    a { text-decoration: none; color: #2c3e50; }
-    a:hover { text-decoration: underline; }
+    .search-box input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent);
+      background: var(--surface);
+    }
+    .search-box input::placeholder { color: var(--muted); }
+
+    .icon-btn {
+      display: grid;
+      place-items: center;
+      width: 40px; height: 40px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface-2);
+      color: var(--text);
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: background .2s, transform .15s, border-color .2s;
+    }
+    .icon-btn:hover { background: var(--surface); border-color: var(--accent); }
+    .icon-btn:active { transform: scale(.94); }
+    .icon-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    /* ============ Layout ============ */
+    .layout {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: minmax(300px, 380px) 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .panel-header h2 { margin: 0; font-size: .95rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+    .count { font-size: .78rem; color: var(--muted); background: var(--surface-2); padding: 2px 10px; border-radius: 999px; }
+
+    /* ============ Breadcrumbs ============ */
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px;
+      padding: 10px 18px;
+      border-bottom: 1px solid var(--border);
+      font-size: .85rem;
+      background: var(--surface-2);
+    }
+    .breadcrumbs button {
+      background: none;
+      border: none;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: .85rem;
+      transition: color .15s, background .15s;
+    }
+    .breadcrumbs button:hover { color: var(--accent); background: var(--accent-soft); }
+    .breadcrumbs .sep { color: var(--muted); opacity: .6; }
+    .breadcrumbs .current { color: var(--text); font-weight: 600; }
+
+    /* ============ Tree ============ */
+    .tree { padding: 8px; max-height: calc(100vh - var(--header-h) - 120px); overflow-y: auto; }
+    .tree ul { list-style: none; margin: 0; padding: 0; }
+    .tree-children { margin-left: 18px; border-left: 1px solid var(--border); padding-left: 6px; display: none; }
+    .tree-item.expanded > .tree-children { display: block; }
+
+    .tree-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      color: var(--text);
+      text-decoration: none;
+      font-size: .9rem;
+      user-select: none;
+      transition: background .15s;
+    }
+    .tree-row:hover { background: var(--surface-2); }
+    .tree-row:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+    .tree-row .label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .tree-row.file.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+
+    .chevron {
+      width: 16px; height: 16px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      transition: transform .2s ease;
+    }
+    .chevron::before { content: ''; width: 6px; height: 6px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); }
+    .tree-item.expanded > .tree-row .chevron { transform: rotate(45deg); }
+    .file-icon { flex-shrink: 0; font-size: .95rem; }
+
+    .state-msg { padding: 24px; text-align: center; color: var(--muted); font-size: .9rem; }
+    .state-msg.error { color: #dc2626; }
+    .state-msg .spinner {
+      display: inline-block;
+      width: 22px; height: 22px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+      margin-bottom: 8px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ============ Preview ============ */
+    .preview { min-height: 60vh; }
+    .preview .empty-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 60vh;
+      color: var(--muted);
+      text-align: center;
+      padding: 24px;
+    }
+    .empty-icon { font-size: 3rem; opacity: .5; }
+    .file-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 22px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface-2);
+      position: sticky;
+      top: var(--header-h);
+      z-index: 10;
+    }
+    .file-header .fname { font-weight: 600; font-size: .95rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .file-header .fpath { font-size: .78rem; color: var(--muted); font-family: var(--mono); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .file-header .actions { margin-left: auto; display: flex; gap: 8px; flex-shrink: 0; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: .82rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .15s, border-color .15s, transform .15s;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .btn:active { transform: scale(.96); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn.primary:hover { background: var(--accent-hover); color: #fff; }
+
+    .markdown-body { padding: 24px 28px; max-width: 900px; }
+    .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 { line-height: 1.3; margin: 1.4em 0 .6em; }
+    .markdown-body h1 { font-size: 1.7rem; border-bottom: 1px solid var(--border); padding-bottom: .4em; }
+    .markdown-body h2 { font-size: 1.35rem; border-bottom: 1px solid var(--border); padding-bottom: .3em; }
+    .markdown-body h3 { font-size: 1.12rem; }
+    .markdown-body p, .markdown-body ul, .markdown-body ol { margin: .6em 0; }
+    .markdown-body code {
+      font-family: var(--mono);
+      font-size: .85em;
+      background: var(--code-bg);
+      padding: .15em .4em;
+      border-radius: 6px;
+    }
+    .markdown-body pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .markdown-body pre code { background: none; padding: 0; }
+    .markdown-body blockquote {
+      margin: .8em 0;
+      padding: .4em 1em;
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      color: var(--muted);
+    }
+    .markdown-body table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .9rem; }
+    .markdown-body th, .markdown-body td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+    .markdown-body th { background: var(--surface-2); font-weight: 600; }
+    .markdown-body tr:nth-child(even) td { background: color-mix(in srgb, var(--surface-2) 50%, transparent); }
+    .markdown-body img { max-width: 100%; border-radius: var(--radius-sm); }
+    .markdown-body hr { border: none; border-top: 1px solid var(--border); margin: 1.6em 0; }
+    .markdown-body details { margin: .8em 0; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0 14px; background: var(--surface-2); }
+    .markdown-body summary { cursor: pointer; padding: 10px 0; font-weight: 600; }
+    .markdown-body details[open] summary { border-bottom: 1px solid var(--border); margin-bottom: 10px; }
+
+    .pdf-frame { width: 100%; height: calc(100vh - var(--header-h) - 60px); border: none; background: #525659; }
+    .raw-pre {
+      margin: 0;
+      padding: 20px 24px;
+      overflow-x: auto;
+      font-family: var(--mono);
+      font-size: .85rem;
+      background: var(--code-bg);
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    /* ============ Search results ============ */
+    .search-results { padding: 8px; }
+    .search-results .result {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text);
+      transition: background .15s;
+    }
+    .search-results .result:hover { background: var(--surface-2); }
+    .search-results .result .rname { font-weight: 600; font-size: .9rem; }
+    .search-results .result .rpath { font-size: .75rem; color: var(--muted); font-family: var(--mono); }
+    .search-results .result mark { background: color-mix(in srgb, var(--accent) 30%, transparent); color: inherit; border-radius: 3px; padding: 0 2px; }
+
+    /* ============ Footer ============ */
+    .site-footer {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px 20px 40px;
+      color: var(--muted);
+      font-size: .82rem;
+      text-align: center;
+    }
+
+    /* ============ Toast ============ */
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--text);
+      color: var(--bg);
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: .85rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s, transform .25s;
+      z-index: 100;
+      box-shadow: var(--shadow-md);
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ============ Responsive ============ */
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      .tree { max-height: 40vh; }
+      .search-box input { width: 100%; }
+      .header-inner { padding: 0 14px; }
+      .brand-sub { display: none; }
+      .markdown-body { padding: 18px; }
+    }
+    @media (max-width: 480px) {
+      .search-box { display: none; }
+      .file-header { flex-wrap: wrap; }
+      .file-header .actions { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+    }
   </style>
 </head>
 <body>
-<h1>Concursos e Artefatos</h1>
-<ul id="lista"></ul>
-<script>
-  const url = 'https://api.github.com/repos/seuerick/concursos/contents/';
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" id="brandLink" style="text-decoration:none;color:inherit" aria-label="Início">
+        <span class="brand-icon" aria-hidden="true">📚</span>
+        <span>
+          <h1>Concursos</h1>
+          <p class="brand-sub">Materiais de estudo · Cebraspe</p>
+        </span>
+      </a>
+      <div class="header-actions">
+        <div class="search-box" role="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" id="searchInput" placeholder="Buscar arquivos…" autocomplete="off" aria-label="Buscar arquivos">
+        </div>
+        <button class="icon-btn" id="themeToggle" aria-label="Alternar tema claro/escuro" title="Alternar tema">🌙</button>
+      </div>
+    </div>
+  </header>
 
-  function criarDiretorioLi(nome) {
-    const li = document.createElement('li');
-    li.className = 'dir';
-    li.textContent = nome;
-    li.tabIndex = 0;
-    return li;
+  <main class="layout">
+    <aside class="panel" aria-label="Navegação">
+      <div class="panel-header">
+        <h2>Conteúdo</h2>
+        <span class="count" id="fileCount">—</span>
+      </div>
+      <nav class="breadcrumbs" id="breadcrumbs" aria-label="Trilha de navegação"></nav>
+      <div id="tree" class="tree" role="tree" aria-label="Árvore de arquivos"></div>
+    </aside>
+
+    <section class="panel preview" aria-label="Pré-visualização">
+      <div id="preview" class="preview">
+        <div class="empty-state">
+          <span class="empty-icon" aria-hidden="true">📖</span>
+          <p><strong>Selecione um arquivo</strong></p>
+          <p>Navegue pela árvore ao lado para visualizar o conteúdo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Materiais de estudo para concursos públicos · Dados via API do GitHub</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js" defer></script>
+  <script>
+  'use strict';
+  /* ============ Config ============ */
+  const REPO = 'seuerick/concursos';
+  const API = `https://api.github.com/repos/${REPO}/contents/`;
+  const RAW = `https://raw.githubusercontent.com/${REPO}/main/`;
+  const IGNORED = new Set(['.git', '.github', 'node_modules', 'index.html']);
+  const EXT_ICON = {
+    md: '📝', pdf: '📄', html: '🌐', txt: '📃', json: '🧾',
+    csv: '📊', xlsx: '📗', docx: '📘', pptx: '📙', zip: '🗜️', png: '🖼️', jpg: '🖼️', jpeg: '🖼️', svg: '🖼️'
+  };
+  const FOLDER_ICON = '📁';
+  const OPEN_FOLDER_ICON = '📂';
+
+  const state = {
+    tree: null,
+    expanded: new Set(),
+    currentPath: null,
+    searchResults: [],
+    searchIndex: []
+  };
+
+  const $ = (sel) => document.querySelector(sel);
+  const treeEl = $('#tree');
+  const previewEl = $('#preview');
+  const breadcrumbsEl = $('#breadcrumbs');
+  const fileCountEl = $('#fileCount');
+  const searchInput = $('#searchInput');
+  const themeToggle = $('#themeToggle');
+
+  /* ============ Helpers ============ */
+  function escapeHtml(str) {
+    return String(str).replace(/[&<>"']/g, (c) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[c]));
   }
 
-  function listarConteudo(apiUrl, ul) {
-    fetch(apiUrl)
-      .then(res => res.json())
-      .then(items => {
-        // Ordena: diretórios primeiro, depois arquivos
-        items.sort((a, b) => {
-          if (a.type === b.type) return a.name.localeCompare(b.name);
-          return a.type === 'dir' ? -1 : 1;
-        });
-        items.forEach(item => {
-          if (item.type === 'dir') {
-            const li = criarDiretorioLi(item.name);
-            const subUl = document.createElement('ul');
-            subUl.className = 'artefatos';
-            li.appendChild(subUl);
-            li.addEventListener('click', function(e) {
-              e.stopPropagation();
-              if (li.classList.contains('expanded')) {
-                li.classList.remove('expanded');
-              } else {
-                li.classList.add('expanded');
-                if (!subUl.hasChildNodes()) {
-                  listarConteudo(item.url, subUl);
-                }
-              }
-            });
-            ul.appendChild(li);
-          }
-        });
-        items.forEach(item => {
-          if (item.type === 'file') {
-            const li = document.createElement('li');
-            li.innerHTML = `<a href="${item.download_url}">${item.name}</a>`;
-            ul.appendChild(li);
-          }
-        });
+  function fileIcon(name) {
+    const ext = name.split('.').pop().toLowerCase();
+    return EXT_ICON[ext] || '📄';
+  }
+
+  function debounce(fn, ms) {
+    let t;
+    return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
+  }
+
+  function toast(msg) {
+    const el = $('#toast');
+    el.textContent = msg;
+    el.classList.add('show');
+    clearTimeout(el._t);
+    el._t = setTimeout(() => el.classList.remove('show'), 2200);
+  }
+
+  async function fetchJson(url) {
+    const res = await fetch(url, { headers: { 'Accept': 'application/vnd.github+json' } });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.json();
+  }
+
+  /* ============ Theme ============ */
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+    themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro');
+  }
+  function initTheme() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyTheme(saved || (prefersDark ? 'dark' : 'light'));
+  }
+  themeToggle.addEventListener('click', () => {
+    const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+    localStorage.setItem('theme', next);
+  });
+
+  /* ============ Tree rendering ============ */
+  function renderTree() {
+    if (!state.tree) return;
+    treeEl.innerHTML = buildTreeHtml(state.tree, '');
+    fileCountEl.textContent = countFiles(state.tree);
+    treeEl.querySelectorAll('.tree-row').forEach((row) => {
+      row.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const { type, path } = row.dataset;
+        if (type === 'dir') toggleDir(path, row);
+        else openFile(path);
       });
+    });
   }
 
-  const lista = document.getElementById('lista');
-  listarConteudo(url, lista);
-</script>
+  function buildTreeHtml(items, basePath) {
+    const sorted = [...items].sort((a, b) => {
+      if (a.type !== b.type) return a.type === 'dir' ? -1 : 1;
+      return a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' });
+    });
+    let html = '<ul>';
+    for (const item of sorted) {
+      const path = basePath ? `${basePath}/${item.name}` : item.name;
+      if (item.type === 'dir') {
+        const isOpen = state.expanded.has(path);
+        const icon = isOpen ? OPEN_FOLDER_ICON : FOLDER_ICON;
+        html += `<li class="tree-item ${isOpen ? 'expanded' : ''}" data-path="${escapeHtml(path)}">
+          <div class="tree-row" role="treeitem" aria-expanded="${isOpen}" tabindex="0" data-type="dir" data-path="${escapeHtml(path)}">
+            <span class="chevron" aria-hidden="true"></span>
+            <span class="file-icon" aria-hidden="true">${icon}</span>
+            <span class="label">${escapeHtml(item.name)}</span>
+          </div>
+          <div class="tree-children">${buildTreeHtml(item.children || [], path)}</div>
+        </li>`;
+      } else {
+        const active = path === state.currentPath ? ' active' : '';
+        html += `<li class="tree-item">
+          <div class="tree-row file${active}" role="treeitem" tabindex="0" data-type="file" data-path="${escapeHtml(path)}">
+            <span class="chevron" aria-hidden="true" style="visibility:hidden"></span>
+            <span class="file-icon" aria-hidden="true">${fileIcon(item.name)}</span>
+            <span class="label">${escapeHtml(item.name)}</span>
+          </div>
+        </li>`;
+      }
+    }
+    return html + '</ul>';
+  }
+
+  function countFiles(items) {
+    return items.reduce((n, it) => n + (it.type === 'dir' ? countFiles(it.children || []) : 1), 0);
+  }
+
+  function toggleDir(path, row) {
+    if (state.expanded.has(path)) {
+      state.expanded.delete(path);
+      row.parentElement.classList.remove('expanded');
+      row.setAttribute('aria-expanded', 'false');
+    } else {
+      state.expanded.add(path);
+      row.parentElement.classList.add('expanded');
+      row.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  function expandPath(path) {
+    const parts = path.split('/');
+    let acc = '';
+    for (let i = 0; i < parts.length - 1; i++) {
+      acc = acc ? `${acc}/${parts[i]}` : parts[i];
+      state.expanded.add(acc);
+    }
+  }
+
+  /* ============ Breadcrumbs ============ */
+  function renderBreadcrumbs(path) {
+    if (!path) { breadcrumbsEl.innerHTML = ''; return; }
+    const parts = path.split('/');
+    let acc = '';
+    let html = '<button data-go="root">Início</button>';
+    parts.forEach((part, i) => {
+      acc = acc ? `${acc}/${part}` : part;
+      html += '<span class="sep" aria-hidden="true">/</span>';
+      if (i === parts.length - 1) {
+        html += `<span class="current">${escapeHtml(part)}</span>`;
+      } else {
+        html += `<button data-go="${escapeHtml(acc)}">${escapeHtml(part)}</button>`;
+      }
+    });
+    breadcrumbsEl.innerHTML = html;
+    breadcrumbsEl.querySelectorAll('button[data-go]').forEach((b) => {
+      b.addEventListener('click', () => {
+        const target = b.dataset.go;
+        if (target === 'root') { state.currentPath = null; renderBreadcrumbs(null); renderTree(); showEmpty(); }
+        else openDir(target);
+      });
+    });
+  }
+
+  /* ============ Data loading ============ */
+  async function loadTree() {
+    showTreeState('loading');
+    try {
+      state.tree = await buildTree(API);
+      renderTree();
+      renderBreadcrumbs(null);
+      showEmpty();
+    } catch (err) {
+      console.error(err);
+      showTreeState('error', 'Não foi possível carregar o repositório. Verifique se ele está publicado no GitHub.');
+    }
+  }
+
+  async function buildTree(url) {
+    const entries = await fetchJson(url);
+    const result = [];
+    for (const entry of entries) {
+      if (IGNORED.has(entry.name)) continue;
+      if (entry.type === 'dir') {
+        const children = await buildTree(entry.url);
+        result.push({ name: entry.name, type: 'dir', children });
+      } else {
+        result.push({ name: entry.name, type: 'file', size: entry.size, download_url: entry.download_url });
+      }
+    }
+    return result;
+  }
+
+  function showTreeState(kind, msg) {
+    if (kind === 'loading') {
+      treeEl.innerHTML = '<div class="state-msg"><span class="spinner"></span><p>Carregando…</p></div>';
+    } else if (kind === 'error') {
+      treeEl.innerHTML = `<div class="state-msg error">⚠️ <p>${escapeHtml(msg)}</p></div>`;
+    }
+  }
+
+  function showEmpty() {
+    previewEl.innerHTML = `<div class="empty-state">
+      <span class="empty-icon" aria-hidden="true">📖</span>
+      <p><strong>Selecione um arquivo</strong></p>
+      <p>Navegue pela árvore ao lado para visualizar o conteúdo.</p>
+    </div>`;
+  }
+
+  /* ============ File opening ============ */
+  async function openFile(path) {
+    state.currentPath = path;
+    expandPath(path);
+    renderTree();
+    renderBreadcrumbs(path);
+    previewEl.innerHTML = '<div class="state-msg"><span class="spinner"></span><p>Carregando…</p></div>';
+    try {
+      const meta = await fetchJson(API + encodeURIComponent(path));
+      const name = path.split('/').pop();
+      const ext = name.split('.').pop().toLowerCase();
+      if (ext === 'md') {
+        const text = await (await fetch(meta.download_url)).text();
+        renderMarkdown(name, path, text);
+      } else if (ext === 'pdf') {
+        renderPdf(name, path, meta.download_url);
+      } else if (ext === 'html') {
+        const text = await (await fetch(meta.download_url)).text();
+        renderRaw(name, path, text);
+      } else {
+        const text = await (await fetch(meta.download_url)).text();
+        renderRaw(name, path, text);
+      }
+    } catch (err) {
+      console.error(err);
+      previewEl.innerHTML = `<div class="state-msg error">⚠️ <p>Erro ao abrir o arquivo.</p></div>`;
+    }
+  }
+
+  function fileHeader(name, path, extra) {
+    return `<div class="file-header">
+      <div style="min-width:0">
+        <div class="fname">${fileIcon(name)} ${escapeHtml(name)}</div>
+        <div class="fpath">${escapeHtml(path)}</div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="${RAW}${encodeURIComponent(path)}" target="_blank" rel="noopener">Abrir no GitHub ↗</a>
+        ${extra || ''}
+      </div>
+    </div>`;
+  }
+
+  function renderMarkdown(name, path, text) {
+    const header = fileHeader(name, path, `<a class="btn primary" href="${RAW}${encodeURIComponent(path)}" download>Baixar</a>`);
+    previewEl.innerHTML = header + '<div class="markdown-body" id="mdBody"></div>';
+    const body = $('#mdBody');
+    if (window.marked && window.DOMPurify) {
+      const html = window.marked.parse(text, { gfm: true, breaks: true });
+      body.innerHTML = window.DOMPurify.sanitize(html);
+    } else {
+      body.innerHTML = `<pre class="raw-pre">${escapeHtml(text)}</pre>`;
+    }
+  }
+
+  function renderPdf(name, path, url) {
+    const header = fileHeader(name, path, `<a class="btn primary" href="${url}" target="_blank" rel="noopener">Abrir PDF ↗</a>`);
+    previewEl.innerHTML = header + `<iframe class="pdf-frame" src="${url}" title="${escapeHtml(name)}"></iframe>`;
+  }
+
+  function renderRaw(name, path, text) {
+    const header = fileHeader(name, path, `<a class="btn primary" href="${RAW}${encodeURIComponent(path)}" download>Baixar</a>`);
+    previewEl.innerHTML = header + `<pre class="raw-pre">${escapeHtml(text)}</pre>`;
+  }
+
+  /* ============ Search ============ */
+  function buildSearchIndex(items, basePath) {
+    for (const item of items) {
+      const path = basePath ? `${basePath}/${item.name}` : item.name;
+      if (item.type === 'dir') buildSearchIndex(item.children || [], path);
+      else state.searchIndex.push({ name: item.name, path });
+    }
+  }
+
+  function renderSearch(query) {
+    const q = query.toLowerCase();
+    const results = state.searchIndex.filter((f) => f.name.toLowerCase().includes(q) || f.path.toLowerCase().includes(q));
+    state.searchResults = results;
+    if (!results.length) {
+      treeEl.innerHTML = `<div class="state-msg"><p>Nenhum resultado para “${escapeHtml(query)}”.</p></div>`;
+      return;
+    }
+    treeEl.innerHTML = `<div class="search-results">` + results.map((r) => {
+      const idx = r.name.toLowerCase().indexOf(q);
+      const name = idx >= 0
+        ? escapeHtml(r.name.slice(0, idx)) + '<mark>' + escapeHtml(r.name.slice(idx, idx + q.length)) + '</mark>' + escapeHtml(r.name.slice(idx + q.length))
+        : escapeHtml(r.name);
+      return `<div class="result" data-path="${escapeHtml(r.path)}">
+        <span class="file-icon" aria-hidden="true">${fileIcon(r.name)}</span>
+        <div style="min-width:0">
+          <div class="rname">${name}</div>
+          <div class="rpath">${escapeHtml(r.path)}</div>
+        </div>
+      </div>`;
+    }).join('') + '</div>';
+    treeEl.querySelectorAll('.result').forEach((el) => {
+      el.addEventListener('click', () => {
+        searchInput.value = '';
+        openFile(el.dataset.path);
+      });
+    });
+  }
+
+  searchInput.addEventListener('input', debounce((e) => {
+    const q = e.target.value.trim();
+    if (!q) { renderTree(); renderBreadcrumbs(state.currentPath); return; }
+    renderSearch(q);
+  }, 200));
+
+  /* ============ Keyboard navigation ============ */
+  treeEl.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const row = e.target.closest('.tree-row');
+    if (!row) return;
+    e.preventDefault();
+    if (row.dataset.type === 'dir') toggleDir(row.dataset.path, row);
+    else openFile(row.dataset.path);
+  });
+
+  /* ============ Init ============ */
+  document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
+    loadTree();
+  });
+  </script>
 </body>
 </html>
