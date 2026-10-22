@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T18:38:34.814328+00:00",
+  "generated_at": "2026-10-22T18:43:17.573654+00:00",
   "tree": [
     {
       "name": "AGENTS.md",
@@ -64,9 +64,14 @@
       "type": "dir",
       "children": [
         {
+          "name": "analise_disciplinas.md",
+          "type": "file",
+          "size": 9856
+        },
+        {
           "name": "analise_gabaritos.md",
           "type": "file",
-          "size": 4386
+          "size": 4639
         },
         {
           "name": "arquivos",
