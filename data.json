@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T18:32:24.382647+00:00",
+  "generated_at": "2026-10-22T18:38:34.814328+00:00",
   "tree": [
     {
       "name": "AGENTS.md",
@@ -63,6 +63,11 @@
       "name": "cgu",
       "type": "dir",
       "children": [
+        {
+          "name": "analise_gabaritos.md",
+          "type": "file",
+          "size": 4386
+        },
         {
           "name": "arquivos",
           "type": "dir",
