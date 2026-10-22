@@ -9,6 +9,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IGNORED = {
     '.git', '.github', 'node_modules', 'index.html', '.gitignore',
     'agent.py', 'ANALISE_PADRAO_TI_TCE_TCU.md', 'data.json', '.nojekyll', 'scripts',
+    'bateria',
 }
 
 
