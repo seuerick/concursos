@@ -1,0 +1,407 @@
+{
+  "generated_at": "2026-10-22T18:19:24.657282+00:00",
+  "tree": [
+    {
+      "name": "AGENTS.md",
+      "type": "file",
+      "size": 6257
+    },
+    {
+      "name": "bacen",
+      "type": "dir",
+      "children": [
+        {
+          "name": "959_BCB_002_01.pdf",
+          "type": "file",
+          "size": 82838
+        },
+        {
+          "name": "959_BCB_CB1_01.pdf",
+          "type": "file",
+          "size": 253527
+        },
+        {
+          "name": "bacen_2024.md",
+          "type": "file",
+          "size": 12632
+        },
+        {
+          "name": "bacen_conteudo.html",
+          "type": "file",
+          "size": 5925
+        },
+        {
+          "name": "BCB_PROVA_DISCURSIVA_CARGO_2.pdf",
+          "type": "file",
+          "size": 230276
+        }
+      ]
+    },
+    {
+      "name": "camara",
+      "type": "dir",
+      "children": [
+        {
+          "name": "2026",
+          "type": "dir",
+          "children": [
+            {
+              "name": "edital.md",
+              "type": "file",
+              "size": 11412
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "size": 763
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cgu",
+      "type": "dir",
+      "children": [
+        {
+          "name": "arquivos",
+          "type": "dir",
+          "children": [
+            {
+              "name": "edital_1_2026.pdf",
+              "type": "file",
+              "size": 768116
+            },
+            {
+              "name": "edital_2_2026.pdf",
+              "type": "file",
+              "size": 207465
+            }
+          ]
+        },
+        {
+          "name": "desempenho.md",
+          "type": "file",
+          "size": 2197
+        },
+        {
+          "name": "edital_2026.md",
+          "type": "file",
+          "size": 13640
+        },
+        {
+          "name": "plano_estudos_2026.md",
+          "type": "file",
+          "size": 5076
+        },
+        {
+          "name": "prova_2026.md",
+          "type": "file",
+          "size": 3775
+        }
+      ]
+    },
+    {
+      "name": "pf",
+      "type": "dir",
+      "children": [
+        {
+          "name": "106_PF_004_01.pdf",
+          "type": "file",
+          "size": 172883
+        },
+        {
+          "name": "106_PF_CB1_01.pdf",
+          "type": "file",
+          "size": 125300
+        },
+        {
+          "name": "14_inteligencia_artificial.md",
+          "type": "file",
+          "size": 3425
+        },
+        {
+          "name": "desempenho.md",
+          "type": "file",
+          "size": 523
+        },
+        {
+          "name": "perito_2025.html",
+          "type": "file",
+          "size": 5699
+        },
+        {
+          "name": "perito_2025.md",
+          "type": "file",
+          "size": 18606
+        },
+        {
+          "name": "perito_2025.txt",
+          "type": "file",
+          "size": 18472
+        }
+      ]
+    },
+    {
+      "name": "tce",
+      "type": "dir",
+      "children": [
+        {
+          "name": "df",
+          "type": "dir",
+          "children": [
+            {
+              "name": "prova_tcdf.md",
+              "type": "file",
+              "size": 72924
+            },
+            {
+              "name": "prova_tcdf.pdf",
+              "type": "file",
+              "size": 1826548
+            }
+          ]
+        },
+        {
+          "name": "ms",
+          "type": "dir",
+          "children": [
+            {
+              "name": "prova_tce_ms.md",
+              "type": "file",
+              "size": 93565
+            },
+            {
+              "name": "prova_tce_ms.pdf",
+              "type": "file",
+              "size": 1480189
+            }
+          ]
+        },
+        {
+          "name": "rs",
+          "type": "dir",
+          "children": [
+            {
+              "name": "prova.pdf",
+              "type": "file",
+              "size": 428824
+            },
+            {
+              "name": "prova_tce_rs.md",
+              "type": "file",
+              "size": 49858
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tcu",
+      "type": "dir",
+      "children": [
+        {
+          "name": "auditor",
+          "type": "dir",
+          "children": [
+            {
+              "name": "2021",
+              "type": "dir",
+              "children": [
+                {
+                  "name": "edital_2021.md",
+                  "type": "file",
+                  "size": 15251
+                },
+                {
+                  "name": "prova_2021.md",
+                  "type": "file",
+                  "size": 173278
+                }
+              ]
+            },
+            {
+              "name": "2025",
+              "type": "dir",
+              "children": [
+                {
+                  "name": "C39E8FF183D6374FD023B71A251DD015B28F4018BA0972D05893FA7C5CC56D0E.pdf",
+                  "type": "file",
+                  "size": 564675
+                },
+                {
+                  "name": "documentacoes",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "acompanhamento_progresso.md",
+                      "type": "file",
+                      "size": 1371
+                    },
+                    {
+                      "name": "fontes_recomendadas.md",
+                      "type": "file",
+                      "size": 1893
+                    },
+                    {
+                      "name": "materiais_semana1.md",
+                      "type": "file",
+                      "size": 2947
+                    },
+                    {
+                      "name": "tecnicas_memorizacao.md",
+                      "type": "file",
+                      "size": 4318
+                    }
+                  ]
+                },
+                {
+                  "name": "edital_2025.md",
+                  "type": "file",
+                  "size": 22782
+                },
+                {
+                  "name": "plano_estudos_2026.md",
+                  "type": "file",
+                  "size": 3087
+                },
+                {
+                  "name": "previsao.md",
+                  "type": "file",
+                  "size": 9044
+                },
+                {
+                  "name": "prova_2025.md",
+                  "type": "file",
+                  "size": 0
+                },
+                {
+                  "name": "resumo_preditivo.md",
+                  "type": "file",
+                  "size": 5331
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "tecnico",
+          "type": "dir",
+          "children": [
+            {
+              "name": "2012",
+              "type": "dir",
+              "children": [
+                {
+                  "name": "tecnico_2012.md",
+                  "type": "file",
+                  "size": 4242
+                },
+                {
+                  "name": "tecnico_2012.txt",
+                  "type": "file",
+                  "size": 4239
+                }
+              ]
+            },
+            {
+              "name": "2015",
+              "type": "dir",
+              "children": [
+                {
+                  "name": "prova_tecnico_2015.txt",
+                  "type": "file",
+                  "size": 4735
+                },
+                {
+                  "name": "tecnico_2015.md",
+                  "type": "file",
+                  "size": 5582
+                },
+                {
+                  "name": "tecnico_2015.txt",
+                  "type": "file",
+                  "size": 5801
+                }
+              ]
+            },
+            {
+              "name": "2025",
+              "type": "dir",
+              "children": [
+                {
+                  "name": "desempenho.md",
+                  "type": "file",
+                  "size": 592
+                },
+                {
+                  "name": "edital.md",
+                  "type": "file",
+                  "size": 9681
+                },
+                {
+                  "name": "edital.txt",
+                  "type": "file",
+                  "size": 9432
+                },
+                {
+                  "name": "img.png",
+                  "type": "file",
+                  "size": 3391217
+                },
+                {
+                  "name": "img_1.png",
+                  "type": "file",
+                  "size": 3391217
+                },
+                {
+                  "name": "lei_14134_21.md",
+                  "type": "file",
+                  "size": 1102
+                },
+                {
+                  "name": "peca_tecnica",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "gestao_contratos.md",
+                      "type": "file",
+                      "size": 1882
+                    },
+                    {
+                      "name": "lrf.md",
+                      "type": "file",
+                      "size": 2518
+                    }
+                  ]
+                },
+                {
+                  "name": "prova_2025.md",
+                  "type": "file",
+                  "size": 46815
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tse",
+      "type": "dir",
+      "children": [
+        {
+          "name": "2025",
+          "type": "dir",
+          "children": [
+            {
+              "name": "desempenho.md",
+              "type": "file",
+              "size": 633
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

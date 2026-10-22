@@ -418,7 +418,7 @@
   <main id="app" aria-live="polite"></main>
 
   <footer class="site-footer">
-    <p>Materiais de estudo para concursos públicos · Listagem automática via API do GitHub</p>
+    <p>Materiais de estudo para concursos públicos · Índice gerado automaticamente a cada atualização</p>
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -431,7 +431,7 @@
   const REPO = 'seuerick/concursos';
   const API = `https://api.github.com/repos/${REPO}/contents/`;
   const RAW = `https://raw.githubusercontent.com/${REPO}/main/`;
-  const IGNORED = new Set(['.git', '.github', 'node_modules', 'index.html', '.gitignore', 'agent.py', 'ANALISE_PADRAO_TI_TCE_TCU.md']);
+  const IGNORED = new Set(['.git', '.github', 'node_modules', 'index.html', '.gitignore', 'agent.py', 'ANALISE_PADRAO_TI_TCE_TCU.md', 'data.json', 'scripts']);
   const EXT_ICON = { md: '📝', pdf: '📄', html: '🌐', txt: '📃', json: '🧾', csv: '📊', xlsx: '📗', docx: '📘', pptx: '📙', zip: '🗜️', png: '🖼️', jpg: '🖼️', jpeg: '🖼️', svg: '🖼️' };
 
   const INST_INFO = {
@@ -505,6 +505,21 @@
   }
 
   async function loadTree() {
+    // Fonte primária: data.json estático (sem rate limit, confiável no GitHub Pages)
+    try {
+      const res = await fetch('data.json', { cache: 'no-cache' });
+      if (res.ok) {
+        const data = await res.json();
+        if (data && Array.isArray(data.tree)) {
+          state.tree = data.tree;
+          buildSearchIndex(state.tree, '');
+          return true;
+        }
+      }
+    } catch (err) {
+      console.warn('data.json indisponível, usando API:', err);
+    }
+    // Fallback: API do GitHub (útil em desenvolvimento local)
     try {
       state.tree = await buildTree(API);
       buildSearchIndex(state.tree, '');
