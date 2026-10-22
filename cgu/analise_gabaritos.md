@@ -104,3 +104,11 @@ Certo, o próximo tende a ser Errado (60%); após Errado, tende a ser Certo (58%
 > **Uso recomendado:** após resolver uma prova, confira se sua distribuição de C/E está
 > próxima de 50/50 e se não há sequências longas — desvios grandes indicam erros prováveis
 > em itens que você marcou "no chute" ou por padrão.
+
+---
+
+## Aprofundamento por disciplina
+
+A análise por **disciplina/tópico** (TCE RN 2025 Cargo 4 e DATAPREV 2023 Cargo 7) e a
+comparação com o conteúdo programático do CGU 2026 Cargo 4 estão em
+[`analise_disciplinas.md`](analise_disciplinas.md).
