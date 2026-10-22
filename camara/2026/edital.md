@@ -199,4 +199,4 @@ tal: Concurso Câmara dos Deputados 2026
 ​Dados.
 ​8.1 Conceitos, atributos, métricas, transformação.
 ​Governança da informação.
-�
+​
