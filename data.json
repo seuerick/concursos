@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:09:59.153837+00:00",
+  "generated_at": "2026-11-02T03:25:21.096329+00:00",
   "tree": [
     {
       "name": "AGENTS.md",
@@ -45,6 +45,16 @@
           "name": "2026",
           "type": "dir",
           "children": [
+            {
+              "name": "conteudo_programatico.md",
+              "type": "file",
+              "size": 11629
+            },
+            {
+              "name": "cronograma.md",
+              "type": "file",
+              "size": 3728
+            },
             {
               "name": "edital.md",
               "type": "file",
